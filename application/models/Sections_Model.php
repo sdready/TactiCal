@@ -1,6 +1,6 @@
 <?php
 
-class Sections_Model extends CI_Model {
+class Sections_model extends CI_Model {
 
 
 

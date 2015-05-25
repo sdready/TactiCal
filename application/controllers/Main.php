@@ -4,7 +4,7 @@ class Main extends CI_Controller {
 		public function __construct()
         {
                 parent::__construct();
-                $this->load->model('Sections_Model');
+                $this->load->model('sections_model');
         }
 
         public function view($page = 'home')
@@ -16,9 +16,9 @@ class Main extends CI_Controller {
 	        }
 
 	        $data['app_name'] = 'TactiCal';
-	        $data['sections'] = $this->Sections_Model->get_sections();
-	        $sectionID = $this->Sections_Model->getSectionID('Acute Care');
-	        $data['subSections'] = $this->Sections_Model->getSubSections($sectionID);
+	        $data['sections'] = $this->sections_model->get_sections();
+	        $sectionID = $this->sections_model->getSectionID('Acute Care');
+	        $data['subSections'] = $this->sections_model->getSubSections($sectionID);
 
 	        $this->load->view('templates/header', $data);
 	        $this->load->view('pages/'.$page, $data);
