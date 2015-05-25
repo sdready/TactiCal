@@ -1,3 +1,7 @@
+<?php
+$this->load->helper('url');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
  <head>
@@ -33,7 +37,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><?php echo $app_name; ?></a>
+          <a class="navbar-brand" href="<?php echo site_url('site'); ?>"><?php echo $app_name; ?></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
