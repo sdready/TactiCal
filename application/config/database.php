@@ -64,10 +64,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
-	'password' => '',
-	'database' => '',
+	'hostname' => 'tactical-rds.cpnv7me8ryeg.us-east-1.rds.amazonaws.com',
+	'username' => 'root',
+	'password' => 'TactiCalTest',
+	'database' => 'TactiCal',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
