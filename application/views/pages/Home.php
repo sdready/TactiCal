@@ -1,29 +1,4 @@
-<div class="container-fluid">
-	<div class="row">
-	<div class="col-sm-3 col-md-2 sidebar">
-	  <ul class="nav nav-sidebar">
-	    <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-	    <li><a href="#" data-toggle="collapse">Reports</a></li>
-	    <li><a href="#">Analytics</a></li>
-	  </ul>
-	  <br />
-	  <h4>Sections</h4>
-	  <ul class="nav nav-stacked" id="accordion1">
-	    <li>
-	      <div class="row"><button class='btn btn-default btn-xs' data-toggle="collapse" data-parent="#accordion1" href="#firstLink">
-	        <span class='glyphicon glyphicon-plus' onclick='collapseIcon(this)'></span></button>
-	        <a href="" style="padding-left: 8px"><?php echo $sectionName;?></a>
-	      </div>
-	      <ul id="firstLink" class="collapse">
-	          <?php
-	            foreach ($subSections as $subSection) {
-	              echo '<li>' . $subSection['SectionName'] . '</li>';
-	            }
-	          ?>
-	      </ul>
-	    </li>
-	</ul>
-	</div>
+
 
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Dashboard</h1>
