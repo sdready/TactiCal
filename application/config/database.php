@@ -64,10 +64,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'test-rds.cpnv7me8ryeg.us-east-1.rds.amazonaws.com',
-	'username' => 'shaun',
-	'password' => 'Virmire-209',
-	'database' => 'test_db_2',
+	'hostname' => 'localhost',
+	'username' => '',
+	'password' => '',
+	'database' => '',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
